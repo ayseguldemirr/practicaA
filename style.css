@@ -1,0 +1,93 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(90deg, #800000, #000080); /* Bordoya dönük koyu mavi lineer gradyan arka plan */
+    color: white; /* Beyaz yazı rengi */
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.screen {
+    display: none;
+}
+
+.screen.active {
+    display: block;
+}
+
+button {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    background-color: #4b0082; /* Koyu mavi */
+    color: #fff; /* Beyaz yazı rengi */
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8a2be2; /* Koyu mor */
+}
+
+#error-message {
+    color: #ff6347; /* Kırmızı */
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: rgba(255, 255, 255, 0.1); /* Hafif şeffaf beyaz arka plan */
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+li:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Daha belirgin hafif şeffaf beyaz arka plan */
+}
+
+/* Mimari şekiller */
+.architecture-shape {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: rotate(45deg);
+    opacity: 0.6;
+    z-index: -1; /* Şekillerin arka plana gömülmesini sağlar */
+}
+
+.architecture-shape:nth-child(1) {
+    top: 20%;
+    left: 10%;
+}
+
+.architecture-shape:nth-child(2) {
+    top: 50%;
+    left: 30%;
+}
+
+.architecture-shape:nth-child(3) {
+    top: 80%;
+    left: 50%;
+}
+
+.architecture-shape:nth-child(4) {
+    top: 30%;
+    left: 70%;
+}
+
+.architecture-shape:nth-child(5) {
+    top: 60%;
+    left: 90%;
+}

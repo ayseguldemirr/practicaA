@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicație de Management Proiecte</title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-screen" class="screen active">
+        <h2>Conectare</h2>
+        <label for="username">Nume utilizator:</label>
+        <input type="text" id="username" placeholder="Introduceți numele de utilizator">
+        <label for="password">Parolă:</label>
+        <input type="password" id="password" placeholder="Introduceți parola">
+        <button id="login-button">Conectare</button>
+        <p id="login-error" class="error-message"></p>
+    </div>
+
+    <div id="main-screen" class="screen">
+        <h2>Management Proiecte</h2>
+        <ul id="project-list"></ul>
+        <button id="add-project-button">Adăugare Proiect</button>
+        <button id="delete-completed-button">Ștergere Proiecte Finalizate</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
